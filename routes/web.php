@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
-        "name" => "Hady Ismanto",
+        "name" => "Hady Ismanto R",
         "email" => "irhady02@gmail.com",
         "image" => "profile.jpg"
     ]);
