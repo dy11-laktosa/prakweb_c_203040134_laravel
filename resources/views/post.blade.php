@@ -2,10 +2,10 @@
 
 @section('container')
 <article>
-  <h2>{{ $post->title }}</h2>
-  <p> By. Hady Ismanto Rachmat in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
-  {{-- <h5>{{ $post["author"] }}</h5> --}}
-  {!! $post->body !!}
+    <h2>{{ $post->title }}</h2>
+    <p> <a href="" class="text-decoration-none">{{ $post->user->name }}</a> in <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a></p>" authors/{{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}</a> in <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a></p>
+    {{-- <h5>{{ $post["author"] }}</h5> --}}
+    {!! $post->body !!}
 </article>
-    <a class="btn btn-primary" href="/posts">Back</a>
+    <a class="btn btn-primary mt-4" href="/posts">Back</a>
 @endsection
