@@ -20,8 +20,8 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 Route::get('/', function () {
-    return view('Home', [
-        "title" => "Home",
+    return view('home', [
+        "title" => "home",
         "active" => 'home'
     ]);
 });
